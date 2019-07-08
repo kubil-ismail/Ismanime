@@ -1,0 +1,13 @@
+Options -Indexes
+Options -Multiviews
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^home?$ index.html
+RewriteRule ^search?$ search.html
+RewriteRule ^winter?$ seassons-1.html
+RewriteRule ^spring?$ seassons-2.html
+RewriteRule ^summer?$ seassons-3.html
+RewriteRule ^fall?$ seassons-4.html
