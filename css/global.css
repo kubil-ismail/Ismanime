@@ -1,0 +1,15 @@
+.cover {
+  width: 100%;
+  max-height: 300px;
+}
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.box-chat,
+.box-show {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+}

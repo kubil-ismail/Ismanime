@@ -8,22 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <style media="screen">
-      .cover {
-        width: 100%;
-        max-height: 300px;
-      }
-      .card-title {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-      .chat {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-      }
-    </style>
+    <link rel="stylesheet" href="css/global.css">
   </head>
   <body>
 
@@ -56,12 +41,16 @@
     <!-- End Of Navbar -->
 
     <!-- Main -->
-    <div class="d-none d-md-block chat" style="z-index:9999; float:right !important;">
+    <div class="d-none box-show" style="z-index:9999; float:right !important;">
+      <button class="badge badge-pill badge-warning group-show">Show Chat Group</button>
+    </div>
+    <div class="d-none d-md-block box-chat" style="z-index:9999; float:right !important;">
+      <button class="badge badge-pill badge-warning group-closed">Close</button>
       <script id="cid0020000223565438221" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 219px;height: 358px;">{"handle":"ismanime","arch":"js","styles":{"a":"202020","b":100,"c":"FFFFFF","d":"FFFFFF","k":"202020","l":"202020","m":"202020","n":"FFFFFF","p":"10","q":"202020","r":100,"fwtickm":1}}</script>
     </div>
     <section class="my-5">
       <div class="container">
-        <h1></h1>
+        <h1>Fall Seasson</h1>
         <hr>
         <div class="row main">
         </div>
@@ -95,5 +84,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/seassons.js" charset="utf-8"></script>
+    <script src="js/chat.js" charset="utf-8"></script>
   </body>
 </html>
